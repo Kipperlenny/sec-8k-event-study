@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEC 8-K Event Dataset — restructuring, impairment and restatement events, 2005–2025</title>
+<meta name="description" content="983 labelled SEC Form 8-K events (Items 2.05, 2.06, 4.02) for S&P 500 companies, 2005 to 2025, with EDGAR acceptance timestamps, trading sessions, point-in-time index membership and a full exclusions file. MIT-licensed Python event-study engine and a free sample.">
+<link rel="canonical" href="https://kipperlenny.github.io/sec-8k-event-study/">
+<style>
+ :root { color-scheme: light dark; --ink:#171b22; --paper:#f7f5f0; --muted:#6e737d; --accent:#b8862b; }
+ @media (prefers-color-scheme: dark) { :root { --ink:#e9e6e0; --paper:#14161a; --muted:#9aa0aa; } }
+ body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+ .wrap { max-width:46rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+ h1 { font-size:1.9rem; line-height:1.2; margin:0 0 .5rem; }
+ h2 { font-size:1.15rem; margin:2rem 0 .5rem; }
+ .sub { color:var(--muted); margin:0 0 1.5rem; }
+ table { border-collapse:collapse; width:100%; font-size:.93rem; margin:.5rem 0 1rem; }
+ th,td { border:1px solid rgba(128,128,128,.35); padding:.4rem .55rem; text-align:left; vertical-align:top; }
+ th { background:rgba(128,128,128,.12); }
+ code { background:rgba(128,128,128,.15); padding:0 .25rem; border-radius:3px; font-size:.9em; }
+ a { color:var(--accent); }
+ .cta { display:inline-block; margin:.4rem .5rem .4rem 0; padding:.55rem .9rem; border:1px solid var(--accent); border-radius:6px; text-decoration:none; }
+ .note { color:var(--muted); font-size:.9rem; }
+ .tablewrap { overflow-x:auto; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "SEC 8-K Event Dataset (restructuring, impairment, restatement), 2005-2025",
+  "description": "983 labelled corporate events derived from SEC EDGAR Form 8-K filings by S&P 500 members (point-in-time membership), 2005 to 2025: Item 2.05 restructuring and cost-reduction plans, Item 2.06 material impairments, Item 4.02 non-reliance on previously issued financial statements. Every event carries the EDGAR acceptance timestamp, the US trading session it fell into, the first full session after it, CIK, accession number, form type, period of report, SIC code and a link to the filing. A separate exclusions file lists 21,654 filings that did not become events and the reason for each. Aggregate event-study statistics per class and holding horizon are included, computed with a documented methodology. No security prices and no per-trade rows are distributed. A free sample of 90 events and the complete MIT-licensed Python event-study engine are public on GitHub.",
+  "url": "https://kipperlenny.github.io/sec-8k-event-study/",
+  "sameAs": "https://github.com/Kipperlenny/sec-8k-event-study",
+  "keywords": ["SEC", "EDGAR", "Form 8-K", "event study", "corporate events", "restructuring", "impairment", "restatement", "abnormal returns", "quantitative finance", "financial dataset"],
+  "license": "https://github.com/Kipperlenny/sec-8k-event-study/blob/main/LICENSE",
+  "isAccessibleForFree": false,
+  "creator": { "@type": "Person", "name": "Lennart Schreiber", "url": "https://aiamond.com" },
+  "publisher": { "@type": "Organization", "name": "aiamond", "url": "https://aiamond.com" },
+  "temporalCoverage": "2005-01-11/2025-12-15",
+  "spatialCoverage": "United States",
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "event_class", "description": "item_2_05_restructuring, item_2_06_impairment or item_4_02_restatement" },
+    { "@type": "PropertyValue", "name": "accepted_at_et", "description": "EDGAR acceptance timestamp of the filing, US Eastern time" },
+    { "@type": "PropertyValue", "name": "event_session", "description": "pre_market, market_hours, after_market or non_trading_day" },
+    { "@type": "PropertyValue", "name": "first_full_session", "description": "first US trading session that opens after acceptance" },
+    { "@type": "PropertyValue", "name": "point_in_time", "description": "index membership verified at the filing date" },
+    { "@type": "PropertyValue", "name": "mean_abnormal_return_pct", "description": "mean buy-and-hold abnormal return per class and horizon against a spliced MSCI World proxy" }
+  ],
+  "distribution": [
+    { "@type": "DataDownload", "encodingFormat": "text/csv", "name": "Free sample, 90 events with every production column", "contentUrl": "https://raw.githubusercontent.com/Kipperlenny/sec-8k-event-study/main/sample/events_sample.csv" },
+    { "@type": "DataDownload", "encodingFormat": "application/zip", "name": "Full dataset, code and documentation (licensed)", "contentUrl": "https://aiamond.gumroad.com/l/sec-8k-events" }
+  ],
+  "measurementTechnique": "EDGAR full-text search of Form 8-K filings by item, deduplication of follow-up filings within 365 days, point-in-time index membership filter, buy-and-hold abnormal returns against a spliced MSCI World proxy with bootstrap confidence intervals, placebo entries and a calendar-time portfolio."
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<h1>SEC 8-K Event Dataset</h1>
+<p class="sub">Restructuring, impairment and restatement events of S&amp;P 500 companies, 2005 to 2025, with acceptance timestamps and a reproducible Python event study.</p>
+
+<p>
+<a class="cta" href="https://github.com/Kipperlenny/sec-8k-event-study">Code and free sample on GitHub</a>
+<a class="cta" href="https://aiamond.gumroad.com/l/sec-8k-events?utm_source=ghpages&amp;utm_medium=web&amp;utm_campaign=sec8k">Full dataset</a>
+</p>
+
+<h2>What is in it</h2>
+<div class="tablewrap">
+<table>
+<tr><th>Event class</th><th>8-K item</th><th>Events</th><th>Our one-year verdict</th></tr>
+<tr><td>Restructuring / cost-reduction plan</td><td>2.05</td><td>568</td><td>weak edge, fails the survivorship stress</td></tr>
+<tr><td>Material impairment</td><td>2.06</td><td>326</td><td>weak edge</td></tr>
+<tr><td>Non-reliance on prior statements (restatement)</td><td>4.02</td><td>89</td><td>negative: worse than the benchmark over three years</td></tr>
+</table>
+</div>
+<p>Every row carries the EDGAR acceptance timestamp, the trading session it fell into (<code>pre_market</code>, <code>market_hours</code>, <code>after_market</code>, <code>non_trading_day</code>), the first full session after it, CIK, accession number, form type, period of report, SIC code, index membership at the filing date and the link to the filing. A separate file lists the 21,654 filings that did <em>not</em> become events, each with its reason.</p>
+
+<h2>What is deliberately not in it</h2>
+<p>No security prices and no per-trade rows. The aggregate statistics were computed from a price source whose terms forbid redistribution, so the package ships statistics rather than prices, and the price series cannot be reconstructed from it. You bring a price source whose terms allow your use; the engine takes any series of adjusted closes.</p>
+
+<h2>The code is free</h2>
+<p>The loader, the event-study engine, the price-provider interface, the tests and the notebook are MIT licensed and public. Read them before you decide whether the data is worth anything to you.</p>
+
+<h2>Honest limits</h2>
+<p>Delisted filers without a ticker in EDGAR are missing from the event list, and delisted companies are missing from the price history; both holes are counted and stress-tested rather than hidden. Index membership is point-in-time for the S&amp;P 500 only. The item-based event definition is blunt. Two data-rights questions, the index-membership column and the derived aggregates, are documented as open rather than asserted away.</p>
+
+<p class="note">Historical research material. Not investment advice, not a trading signal, no promise about future returns. Published by aiamond (Lennart Schreiber), Spain.</p>
+</div>
+</body>
+</html>

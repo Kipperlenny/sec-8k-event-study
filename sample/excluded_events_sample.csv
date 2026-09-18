@@ -1,0 +1,13 @@
+event_class,item,form_type,ticker,company,cik,accession_no,filing_date,items_in_filing,reason,source_url
+item_2_05_restructuring,2.05,8-K,,TXU ENERGY CO LLC,1263050,0000950120-05-000002,2005-01-03,"2.05,8.01",no_ticker_in_edgar,https://www.sec.gov/Archives/edgar/data/1263050/000095012005000002/
+item_2_05_restructuring,2.05,8-K,NNBR,NN INC,918541,0001005794-05-000003,2005-01-03,2.05,not_index_member_at_filing,https://www.sec.gov/Archives/edgar/data/918541/000100579405000003/
+item_2_05_restructuring,2.05,8-K/A,AB,ALLIANCE CAPITAL MANAGEMENT HOLDING LP,825313,0001104659-05-000447,2005-01-06,"1.01,5.02,7.01,9.01",follow_up_within_365d,https://www.sec.gov/Archives/edgar/data/825313/000110465905000447/
+item_2_05_restructuring,2.05,8-K,T,SBC COMMUNICATIONS INC,732717,0000950134-05-008804,2005-05-03,"8.01,9.01",not_in_canonical_run,https://www.sec.gov/Archives/edgar/data/732717/000095013405008804/
+item_2_06_impairment,2.06,8-K,,AMERICANWEST BANCORPORATION,726990,0001193125-05-000465,2005-01-03,"2.02,2.06,7.01,9.01",no_ticker_in_edgar,https://www.sec.gov/Archives/edgar/data/726990/000119312505000465/
+item_2_06_impairment,2.06,8-K,formerly Xin Net Corp.,"CHINA MOBILITY SOLUTIONS, INC.",1082603,0001072588-05-000002,2005-01-04,"4.01,9.01",not_index_member_at_filing,https://www.sec.gov/Archives/edgar/data/1082603/000107258805000002/
+item_2_06_impairment,2.06,8-K/A,AB,ALLIANCE CAPITAL MANAGEMENT HOLDING LP,825313,0001104659-05-000447,2005-01-06,"1.01,5.02,7.01,9.01",follow_up_within_365d,https://www.sec.gov/Archives/edgar/data/825313/000110465905000447/
+item_2_06_impairment,2.06,8-K,T,SBC COMMUNICATIONS INC,732717,0000950134-05-008804,2005-05-03,"8.01,9.01",not_in_canonical_run,https://www.sec.gov/Archives/edgar/data/732717/000095013405008804/
+item_4_02_restatement,4.02,8-K/A,,ENVIRONMENTAL REMEDIATION HOLDING CORP,799235,0001144204-05-000082,2005-01-03,"4.02,9.01",no_ticker_in_edgar,https://www.sec.gov/Archives/edgar/data/799235/000114420405000082/
+item_4_02_restatement,4.02,8-K,formerly Xin Net Corp.,"CHINA MOBILITY SOLUTIONS, INC.",1082603,0001072588-05-000002,2005-01-04,"4.01,9.01",not_index_member_at_filing,https://www.sec.gov/Archives/edgar/data/1082603/000107258805000002/
+item_4_02_restatement,4.02,8-K/A,AB,ALLIANCE CAPITAL MANAGEMENT HOLDING LP,825313,0001104659-05-000447,2005-01-06,"1.01,5.02,7.01,9.01",follow_up_within_365d,https://www.sec.gov/Archives/edgar/data/825313/000110465905000447/
+item_4_02_restatement,4.02,8-K,BIIB,BIOGEN IDEC INC.,875045,0000950135-07-003409,2007-05-30,"1.01,8.01,9.01",not_in_canonical_run,https://www.sec.gov/Archives/edgar/data/875045/000095013507003409/

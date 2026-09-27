@@ -50,6 +50,16 @@ members, flagged): Item 2.05 restructuring, Item 2.06 impairment, Item 4.02 rest
 tables, verdict files and the complete exclusions file. One-off licences, Individual 79 USD, Organization
 249 USD, Product/Publication 599 USD: **[https://aiamond.gumroad.com/l/sec-8k-events](https://aiamond.gumroad.com/l/sec-8k-events?utm_source=github&utm_medium=readme&utm_campaign=sec8k)**
 
+Only need one class? The **Starter edition** has Item 2.06 (326 impairment events, their exclusions and aggregates)
+for 29 USD under the Individual licence: **[https://aiamond.gumroad.com/l/ebsitf](https://aiamond.gumroad.com/l/ebsitf?utm_source=github&utm_medium=readme&utm_campaign=sec8k)**
+
+## Licence texts and seller
+
+Read the terms before you buy: the full licence texts for every tier, including the Starter edition, are in
+[`licenses/`](licenses/). The licensor is Lennart Schreiber (sole trader, Spain, brand "aiamond"); the address and
+VAT ID are in each licence text. Gumroad, Inc. is the merchant of record: it sells the download, charges any VAT and
+handles payment.
+
 Results are reported as the data supports them, including negative ones: buying after a restatement
 (Item 4.02) underperformed the benchmark over three years, and that table ships with the rest.
 
